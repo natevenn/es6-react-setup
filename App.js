@@ -54,81 +54,17 @@ export default App
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//import React from 'react';
-//import ReactDOM from 'react-dom';
-
+// how to access children components
 //class App extends React.Component {
-  //constructor(){
-    //super(); // super gives us context for this in our component
-    //this.state = {
-      //red: 0,
-      //green: 0,
-      //blue: 0
-    //}
-    //this.update = this.update.bind(this)
-  //}
-
-  //update(e) {
-    //this.setState({
-      //red: ReactDOM.findDOMNode(this.refs.red).value,
-      //green: ReactDOM.findDOMNode(this.refs.green).value,
-      //blue: ReactDOM.findDOMNode(this.refs.blue).value
-    //})
-  //}
-
   //render() {
-    //return (
-      //<div>
-        //<Slider ref='red' update={this.update} />
-        //{this.state.red}
-        //<br/>
-        //<Slider ref='green' update={this.update} />
-        //{this.state.green}
-        //<br/>
-        //<Slider ref='blue' update={this.update} />
-        //{this.state.blue}
-      //</div>
-      //);
+    //return <Button> I <Heart /> React</Button>
   //}
 //}
 
-//class Slider extends React.Component {
+//class Button extends React.Component {
   //render() {
-    //return (
-      //<input type="range"
-        //min='0'
-        //max='255'
-        //onChange={this.props.update} />
-    //);
+    //return <button>{this.props.children}</button>
   //}
 //}
 
-//ReactDOM.render(<App />, document.getElementById('app'));
-
-//export default App
+//const Heart = () => <span className="glyphicon glyphicon-heart"></span>
